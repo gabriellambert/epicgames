@@ -44,9 +44,12 @@
 </section>
 
 <h3>Futebol</h3>
-{% for chave, nome_jogos in nome_jogos.items %}
-    <h5>{{nome_jogos}}</h5>
+{% if jogos %}
+{% for jogo in jogos %}
+    <h5>{{jogo.mandatario}} x {{ jogo.visitante }}</h5>
 {% endfor %}
+{% else %}
+{% endif %}
 
 <h3>Basquete</h3>
 

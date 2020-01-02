@@ -1,15 +1,12 @@
 from django.shortcuts import render
+from .models import Jogo
 
 
 def index(request):
-    jogos = {
-        1: 'Jogo 01',
-        2: 'Jogo 02',
-        3: 'Jogo 03',
-    }
+    jogos = Jogo.objects.all()
 
     dados = {
-        'nome_jogos': jogos
+        'jogos': jogos
     }
     return render(request, 'index.html', dados)
 
