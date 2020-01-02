@@ -44,12 +44,24 @@
 </section>
 
 <h3>Futebol</h3>
+<div class="card imagem-card" style="width: 18rem;">
 {% if jogos %}
-{% for jogo in jogos %}
-    <h5>{{jogo.mandatario}} x {{ jogo.visitante }}</h5>
+    {% for jogo in jogos %}
+    {% if jogo.imagem == '' %}
+        <img src="{% static 'img/bg_img.jpg' %}" class="imagem-card ">
+    {% else %}
+        <img src="{{ jogo.imagem.url }}" alt="" class="imagem-card ">
+    {% endif %}
+    <div class="card-body">
+        <h5 class="card-title">{{jogo.mandatario}} x {{ jogo.visitante }}</h5>
+        <p class="card-text">{{ jogo.torneio }}</p>
+        <p class="card-text">{{ jogo.ano }}</p>
+        <a href="#" class="btn btn-primary">Assistir</a>
+    </div>
 {% endfor %}
 {% else %}
 {% endif %}
+</div>
 
 <h3>Basquete</h3>
 
