@@ -25,7 +25,10 @@ div.desc {
   text-align: center;
 }
 
-.imagem-card {
-    object-fit: cover;
-    height: 20px;
+.jogos {
+    padding: 250px;
+}
+
+.card-largura {
+    max-width: 18rem;
 }

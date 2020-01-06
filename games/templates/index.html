@@ -43,28 +43,37 @@
     </div>
 </section>
 
-<h3>Futebol</h3>
-<div class="card imagem-card" style="width: 18rem;">
-{% if jogos %}
-    {% for jogo in jogos %}
-    {% if jogo.imagem == '' %}
-        <img src="{% static 'img/bg_img.jpg' %}" class="imagem-card ">
-    {% else %}
-        <img src="{{ jogo.imagem.url }}" alt="" class="imagem-card ">
-    {% endif %}
-    <div class="card-body">
-        <h5 class="card-title">{{jogo.mandatario}} x {{ jogo.visitante }}</h5>
-        <p class="card-text">{{ jogo.torneio }}</p>
-        <p class="card-text">{{ jogo.ano }}</p>
-        <a href="#" class="btn btn-primary">Assistir</a>
+<h3 class="pt-5">Jogos</h3>
+
+<div class="container-fluid bg-light" id="receitas">
+    <div class="row justify-content-center">
+
+            {% if jogos %}
+            <div class="card-deck jogos">
+
+                {% for jogo in jogos %}
+                <div class="card" style="width: 18rem;">
+                    {% if jogo.imagem == '' %}
+                    <img src="{% static 'img/bg_img.jpg' %}" class="card-img-top">
+                    {% else %}
+                    <img src="{{ jogo.imagem.url }}" alt="" class="card-img-top">
+                    {% endif %}
+                    <div class="card-img-overlay">
+                        <div class="card-body">
+                            <h5 class="card-title">{{jogo.mandatario}} x {{ jogo.visitante }}</h5>
+                            <p class="card-text">{{ jogo.torneio }}</p>
+                            <p class="card-text">{{ jogo.ano }}</p>
+                            <a href="#" class="btn btn-primary">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% else %}
+
+            </div>
+        </div>
     </div>
-{% endfor %}
-{% else %}
-{% endif %}
 </div>
 
-<h3>Basquete</h3>
-
-<h3>Tenis</h3>
-
+{% endif %}
 {% endblock %}

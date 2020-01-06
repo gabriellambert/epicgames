@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e656354-6b29-4e9a-bef5-01d406f43863" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/epicgames/static/img/bg_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/fotos/06/01/2020/Screen_Shot_2019-12-19_at_18.32.36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/fotos/06/01/2020/Screen_Shot_2019-12-19_at_18.32.43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/fotos/06/01/2020/tenis01.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/epicgames/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/epicgames/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicgames/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/epicgames/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/games/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
